@@ -50,8 +50,16 @@ fun main (){
     val myString = "Hello World"
     var firstCharInString = myString[0]
     var lastCharInString = myString[myString.length - 1]
+    var myLength = myString.length
+
     // print("First character: " + firstCharInString)
-    print("Last character: " + lastCharInString)
+    // print("Last character: " + lastCharInString)
+
+    //--------------------------------------------------
+    // ♦ "STRING INTERPOLATION" OR "STRING TEMPLATE EXPRESSION" ("$" OR "${}"):
+    //      → are "String Literals" 
+    //      → that contain "Embedded Expressions":
+    print("First character is $firstCharInString and last character is $lastCharInString and tke length of string is ${myString.length}")
     // ===============================================
 
 
