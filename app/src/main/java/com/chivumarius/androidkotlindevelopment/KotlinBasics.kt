@@ -41,3 +41,11 @@ fun main (){
     print("Hello " +  myName)
 }
 
+// Comment on "One Line"
+
+/*
+    Comment on "Several Lines"
+*/
+
+//TODO: This is a comment that appears in the "TODO" Tab!
+
