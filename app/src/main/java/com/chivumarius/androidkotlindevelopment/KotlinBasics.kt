@@ -24,7 +24,7 @@
 
 
 
-    ♦ Note ♦
+    ~~♦ Note ♦
         We Run the File
         → by pressing the "Play" Button
         → on the "Left" of the "File".
@@ -38,14 +38,25 @@ fun main (){
     // ♦ Creating the "Mutable Variable":
     
     // ===============================================
-    // •I• "STRING" DATA TYPES:
+    // (I) "STRING" DATA TYPES:
+    //      → represents a Connection of "Several Characters"
     var myName = "Marius"
-    myName = "Vla"
+    myName = "Vlad"
+
+    // ♦ Display "Concatenated Strings" → in the "Console":
+    // print("Hello " +  myName)
+
+    // STRING:
+    val myString = "Hello World"
+    var firstCharInString = myString[0]
+    var lastCharInString = myString[myString.length - 1]
+    // print("First character: " + firstCharInString)
+    print("Last character: " + lastCharInString)
     // ===============================================
-    
+
 
     // ===============================================
-    // •II• "NUMBER" DATA TYPES:
+    // (II) "NUMBER" DATA TYPES:
     val myAge = 25
 
     // --------------------------------------------
@@ -53,6 +64,7 @@ fun main (){
     //    → Explicit Declaration of the Data Type:
 
     // (1.1) "1 Byte" = "8 bit":    
+    //  Varianle Name: Type = Value
     val myByte: Byte = 12
 
     // (1.2) "1 Short" = "16 bit":
@@ -78,10 +90,23 @@ fun main (){
     // ===============================================
  
   
+    // ===============================================
+    // (III) "BOOLEAN" DATA TYPES:
+    //          → represents logical values
+    var isSunny: Boolean = true
+    isSunny = false
+    // ===============================================
+    
 
-    // ♦ Display "Concatenated Strings" → in the "Console":
-    print("Hello " +  myName)
+    // ===============================================
+    // (IV) "CHARACTER" DATA TYPES:
+    var letterChar = 'A'
+    var digitChar = '5'
+    // ===============================================
+    
 }
+
+
 
 // Comment on "One Line"
 
