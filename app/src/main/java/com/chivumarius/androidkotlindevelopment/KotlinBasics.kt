@@ -58,16 +58,16 @@ fun main (){
     myName = "Vlad"
 
     // ♦ Display "Concatenated Strings" → in the "Console":
-    println("► Hello " +  myName)
+    println("► Hello $myName")
 
     // STRING:
     val myString = "Hello World"
-    var firstCharInString = myString[0]
-    var lastCharInString = myString[myString.length - 1]
+    val firstCharInString = myString[0]
+    val lastCharInString = myString[myString.length - 1]
     var myLength = myString.length
 
-    println("► First character: " + firstCharInString)
-    println("► Last character: " + lastCharInString)
+    println("► First character: $firstCharInString")
+    println("► Last character: $lastCharInString")
 
     //--------------------------------------------------
     // ♦ "STRING INTERPOLATION" OR "STRING TEMPLATE EXPRESSION" ("$" OR "${}"):
@@ -86,7 +86,7 @@ fun main (){
     //    → Explicit Declaration of the Data Type:
 
     // (1.1) "1 Byte" = "8 bit":    
-    //  Varianle Name: Type = Value
+    //  Variable Name: Type = Value
     val myByte: Byte = 12
 
     // (1.2) "1 Short" = "16 bit":
@@ -100,7 +100,7 @@ fun main (){
 
     
     // --------------------------------------------
-    // (2) "FLOATING POINY NUMBER" DATA TYPES:
+    // (2) "FLOATING POINT NUMBER" DATA TYPES:
     //    → Explicit Declaration of the Data Type:
 
     // (2.1) "1 Float" = "32 bit" (Used for Games Physics):    
@@ -108,7 +108,7 @@ fun main (){
 
     
     // (2.2) "1 Double" = "64 bit" (Commonly Used):
-    val myDouble: Double = 1.12345678912345678912
+    val myDouble: Double = 1.1234567891234568
     // ===============================================
  
   
@@ -128,38 +128,84 @@ fun main (){
 
 
     // ===============================================
-    // (V) ARITMETIC  OPERATORS (+, -, /, %):
+    // (V) ARITHMETIC  OPERATORS (+, -, /, %):
 
+    // --------------------------------------------
     // (5.1) "ADDITION" OPERATOR ("+"):
     var result = 5 + 5
-    println("► " + result)
+    println("► $result")
 
+    // --------------------------------------------
     // (5.1) "ADDITION" OPERATOR ("+"):
-     result = result - 2
-    // result -= 2
-    println("► " + result)
+//     result = result - 2
+     result -= 2
+    println("► $result")
 
-
+    // --------------------------------------------
     // (5.3) "DIVISION" OPERATOR ("/"):
     // result = result / 2
     result /= 2
-    println("► " + result)
+    println("► $result")
 
+    // --------------------------------------------
     // (5.4) "MULTIPLICATION" OPERATOR ("*"):
     // result = result * 2
     result *= 2
-    println("► " + result)
+    println("► $result")
 
+    // --------------------------------------------
     // (5.5) "MODULUS" OPERATOR ("%"):
     //          → The "Remainder" of the "division"
     result = 15 % 2
-    println("► " + result)
+    println("► $result")
 
+    // --------------------------------------------
     // ♦♦ "Division Result" → as "Double" Data Type:
     val a = 5.0
     val b = 3
     val resultDouble: Double
     resultDouble = (a / b)
-    println("► " + resultDouble)
+    println("► $resultDouble")
+    // ===============================================
+
+
+    // ===============================================
+    // (VI) COMPARISON  OPERATORS (==, !=, <, >, <=, >=):
+
+    // --------------------------------------------
+    // (6.1) "DOUBLE EQUAL" OPERATOR ("=="):
+    //          → "Compare" the "Equality" of "Two Values"
+    //          → and Gives a "Boolean Result"
+    val isEqual = 5 == 3
+    println("► isEqual is $isEqual")
+
+    val isEqual2 = 5 == 5
+    println("► isEqual is $isEqual2")
+
+
+    // --------------------------------------------
+    // (6.2) "NOT EQUAL" OPERATOR ("!="):
+    val isNotEqual = 5 != 5
+    println("► isNotEqual is $isNotEqual")
+
+
+    // --------------------------------------------
+    // (6.3) "LESS THAN" OPERATOR ("<"):
+    // ♦ "String Template" Expression ("String Interpolation")    
+    println("► Is 5 Less than 3?  ${5 < 3}")
+
+    // --------------------------------------------
+    // (6.4) "GREATER THAN" OPERATOR (">"):
+    // ♦ "String Template" Expression ("String Interpolation")   
+    println("► Is 5 Greater than 3?  ${5 > 3}")
+
+    // (6.5) "LESS OR EQUAL" OPERATOR ("<="):
+    // ♦ "String Template" Expression ("String Interpolation")   
+    println("► Is 8 Less or Equal 8?  ${8 <= 8}")
+
+    // --------------------------------------------
+    // (6.6) "GREATER OR EQUAL" OPERATOR (">="):
+    // ♦ "String Template" Expression ("String Interpolation")   
+    println("► Is 6 Greater or Equal 5?  ${6 >= 5}")
     // ===============================================
 }
