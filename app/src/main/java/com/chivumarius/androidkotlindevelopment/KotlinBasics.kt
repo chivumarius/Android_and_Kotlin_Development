@@ -262,4 +262,29 @@ fun main (){
     println("► remainderOfDividingNumber is $remainderOfDividingNumber")
     // ===============================================
 
+    
+
+    
+    // ===============================================
+    // (VIII) INCREMENTATION & DECREMENTATION OPERATORS (++, --)
+
+    // --------------------------------------------
+    // (8.1) "INCREMENTATION" OPERATOR ("++"):
+    //          → "Increasing" the "Value" of the "Variable" by "1"   
+    var incrementingNumber = 30
+    // var incrementingNumber = incrementingNumber + 1
+    incrementingNumber++
+    println("► incrementingNumber After is ${incrementingNumber++}")
+    println("► incrementingNumber Before is ${++incrementingNumber}")
+
+
+    // --------------------------------------------
+    // (8.2) "DECREMENTATION" OPERATOR ("--"):
+    //          → "Decreasing" the "Value" of the "Variable" by "1"    
+    var decreasingNumber = 50
+    // var decreasingNumber = decreasingNumber - 1
+    decreasingNumber--
+    println("► decreasingNumber After is ${decreasingNumber--}")
+    println("► decreasingNumber Before is ${--decreasingNumber}")
+    // ===============================================
 }
