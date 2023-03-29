@@ -23,8 +23,22 @@
         → during the "Run Time".
 
 
+        
+    ♦ COMMENTS:
+        [1] Comment on "One Line":
+            //  This is a Comment on "One Line"
 
-    ~~♦ Note ♦
+        [2] Comment on "Several Lines"c
+            / *
+                This is a Comment on "Several Lines"
+            * /
+
+        [3] Comment that Appears in the "TODO" Tab:
+            //TODO: This is a Comment that Appears in the "TODO" Tab!
+
+
+
+    ♦ Note ♦
         We Run the File
         → by pressing the "Play" Button
         → on the "Left" of the "File".
@@ -44,7 +58,7 @@ fun main (){
     myName = "Vlad"
 
     // ♦ Display "Concatenated Strings" → in the "Console":
-    // print("Hello " +  myName)
+    println("► Hello " +  myName)
 
     // STRING:
     val myString = "Hello World"
@@ -52,14 +66,14 @@ fun main (){
     var lastCharInString = myString[myString.length - 1]
     var myLength = myString.length
 
-    // print("First character: " + firstCharInString)
-    // print("Last character: " + lastCharInString)
+    println("► First character: " + firstCharInString)
+    println("► Last character: " + lastCharInString)
 
     //--------------------------------------------------
     // ♦ "STRING INTERPOLATION" OR "STRING TEMPLATE EXPRESSION" ("$" OR "${}"):
     //      → are "String Literals" 
     //      → that contain "Embedded Expressions":
-    print("First character is $firstCharInString and last character is $lastCharInString and tke length of string is ${myString.length}")
+    println("► First character is $firstCharInString and last character is $lastCharInString and tke length of string is ${myString.length}")
     // ===============================================
 
 
@@ -111,16 +125,41 @@ fun main (){
     var letterChar = 'A'
     var digitChar = '5'
     // ===============================================
-    
+
+
+    // ===============================================
+    // (V) ARITMETIC  OPERATORS (+, -, /, %):
+
+    // (5.1) "ADDITION" OPERATOR ("+"):
+    var result = 5 + 5
+    println("► " + result)
+
+    // (5.1) "ADDITION" OPERATOR ("+"):
+     result = result - 2
+    // result -= 2
+    println("► " + result)
+
+
+    // (5.3) "DIVISION" OPERATOR ("/"):
+    // result = result / 2
+    result /= 2
+    println("► " + result)
+
+    // (5.4) "MULTIPLICATION" OPERATOR ("*"):
+    // result = result * 2
+    result *= 2
+    println("► " + result)
+
+    // (5.5) "MODULUS" OPERATOR ("%"):
+    //          → The "Remainder" of the "division"
+    result = 15 % 2
+    println("► " + result)
+
+    // ♦♦ "Division Result" → as "Double" Data Type:
+    val a = 5.0
+    val b = 3
+    val resultDouble: Double
+    resultDouble = (a / b)
+    println("► " + resultDouble)
+    // ===============================================
 }
-
-
-
-// Comment on "One Line"
-
-/*
-    Comment on "Several Lines"
-*/
-
-//TODO: This is a comment that appears in the "TODO" Tab!
-
