@@ -47,7 +47,6 @@ fun main (){
     // ♦ Variable:
     var age = 17
 
-
     // ♦ Condition Checked:
     if(age >= 21) {
        println("► Now you may drink in the EU!") 
