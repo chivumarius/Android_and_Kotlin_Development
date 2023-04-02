@@ -6,7 +6,7 @@
                 ○  KOTLIN  BASICS  ○ 
                 ____________________
 
-                - "WHILE(){}" LOOP -
+             - "DO {} WHILE(){}" LOOP -
             ____________________________
             
             
@@ -20,20 +20,27 @@
 
 
 
-    ♦ The "While" Loop 
-        → "Loops" through a "Block of Code" 
-        → as long as a "Specified Condition" 
-        → is "True".
+    ♦ The "Do..While" Loop 
+        → is a "Variant" of the "While" Loop. 
+
+        → This "Loop" will "Execute" the "Code Block Once", 
+        → "Before Checking" if the "Condition" is "True", 
+        → then it will "Repeat" the "Loop" 
+        → as long as the "Condition" is "True".
 
 
 
-    ♦ The "While(){}" Loop "Syntax":
+
+    ♦ The "Do {} While(){}" Loop "Syntax":
     _______________________________________
         
-        while (condition) {
+        do {
           // Code Block to be Executed
         }
+        while (condition);
     _______________________________________
+
+
 
 
     ♦ Note ♦
@@ -49,30 +56,18 @@ package com.chivumarius.androidkotlindevelopment._1__Kotlin_Basics
 
 // ♦ Kotlin Application Start Function:
 fun main (){
-
+       
     // ♦ EX. 1 - "INCREMENTATION": 
     // ♦ Variable:
     var x = 1
 
-    // ♦ The "While" Loop:
-    while (x <= 10) {
+    // ♦ The "Do .. While" Loop:
+    do{
         println("$x")
         x++
-    }
+    } while (x <= 10)     
+
 
     // ♦ Adding "Line Break" or "Content" on a "New Line" ("\n"):
     println("\n While Loop is Done!")
-
-
-
-
-     // ♦ EX. 2 - "DECREMENTATION" 
-    // ♦ Variable:
-    var y = 100
-
-    // ♦ The "While" Loop:
-    while (y >= 0) {
-        println("$y")
-        y -= 2
-    }
 }
