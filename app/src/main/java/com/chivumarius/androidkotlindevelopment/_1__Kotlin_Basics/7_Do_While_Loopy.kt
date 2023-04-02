@@ -57,7 +57,6 @@ package com.chivumarius.androidkotlindevelopment._1__Kotlin_Basics
 // ♦ Kotlin Application Start Function:
 fun main (){
        
-    // ♦ EX. 1 - "INCREMENTATION": 
     // ♦ Variable:
     var x = 1
 
