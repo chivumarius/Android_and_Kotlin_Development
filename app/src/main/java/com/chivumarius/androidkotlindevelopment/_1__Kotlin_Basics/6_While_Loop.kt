@@ -66,7 +66,7 @@ fun main (){
 
 
 
-     // ♦ EX. 2 - "DECREMENTATION" 
+     // ♦ EX. 2 - "DECREMENTAL"
     // ♦ Variable:
     var y = 100
 
@@ -75,4 +75,21 @@ fun main (){
         println("$y")
         y -= 2
     }
+
+
+    // ♦ EX. 3 - "STRINGS" 
+    // ♦ Variable:
+    var feltTemperature = "cold"
+    var roomTemperature = 10
+
+    // ♦ The "While" Loop:
+    while (feltTemperature == "cold") {
+        roomTemperature++
+
+        // ♦ Checking Condition:
+        if(roomTemperature >= 20){
+            feltTemperature = "comfortable"  
+            println("Felt Temperature is comfortable now!")    
+        }
+    }   
 }
