@@ -109,9 +109,9 @@ fun main (){
     //     → into a "Non-Null Type"
     println(nullableName!!.toLowerCase())
 
-
+//
     // (5) "SAFE  CALL" OPERATOR (Used in "Classes"):
-    val wifesAge: String? = user?.wife?.age ?: 0
+    // val wifesAge: String? = user?.wife?.age ?: 0
 
 
 

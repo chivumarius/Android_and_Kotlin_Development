@@ -24,19 +24,28 @@
 
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀*/
 
-package com.chivumarius.androidkotlindevelopment._1__Kotlin_Basics
+package com.chivumarius.androidkotlindevelopment._2__Kotlin_OOP
 
 
 
-// ♦ The "main(){}" Function 
+// ♦ The "main(){}" Function
 //      → as "Entry Point" of "Application":
 fun main (){
-    
+    // ♦ Creating the "Object" from a "Class" 
+    //   → or "Instance" of a "Class":
+    var marius = Person("Marius", "Chivu")
+    var john = Person()
+    var johnPeterson = Person(lastName = "Peterson")
 }
 
 
-// ♦ Function "With Parameters" ("Input"): 
-fun average(a: Double, b: Double): Double{
-    // ♦ "Output"
-    return (a + b)/2
-} 
+// ♦ By Creating a "Class"
+//   → we Create our "Own Data Type":
+class Person (firstName: String = "John", lastName: String = "Doe"){
+
+    // ♦ The "Initializer":
+    init {
+        println("Initialized a new Person Object with " +
+                "firstName = $firstName abd lastName = $lastName")
+    }
+}
