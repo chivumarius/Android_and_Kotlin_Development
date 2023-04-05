@@ -64,7 +64,7 @@ fun main (){
 
 
 // ♦ "Class": 
-class Car (){
+open class Car (){
     // ♦ The "lateinit" Keyword 
     //   → for "Later Initialization" of the "Property"
     lateinit var owner: String
