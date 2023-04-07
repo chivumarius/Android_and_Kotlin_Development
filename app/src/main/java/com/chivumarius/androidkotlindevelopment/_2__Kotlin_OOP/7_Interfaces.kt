@@ -33,10 +33,10 @@ interface Driveable {
     // ♦ "Property":
     val maxSpeed: Double
     
-    // ♦ "Function Head":
+    // ♦ The "drive()" Function Head:
     fun drive(): String
     
-    // ♦ "Function":
+    // ♦ The "brake()" brake():
     fun brake(){
         println("The drivable is braking")
     }
@@ -48,57 +48,75 @@ interface Driveable {
 //  → with "Primary Constructor"
 //  → which Must Be "Opened"
 //  → in Order to be "Inherited":
-open class Car2(override val maxSpeed: Double, val name: String, val brand: String): Driveable {
+open class Car3 ( override val maxSpeed: Double,
+                  val name: String,
+                  val brake: String
+                ) : Driveable {    
+    
     // ♦ Open Properties:
     open var range: Double = 0.0
 
-
+ 
     // ♦ The "extendRange()" Method:
-    fun extendRange(amount: Double){
-        if(amount > 0)
+    fun extendRange(amount: Double) {
+        if (amount > 0) {
             range += amount
-    }  
+        }
+    } 
     
 
-    // ♦ Override "drive()" Function from "Driveable" Interface:
+    // ♦ Override "drive()" Function from "Driveable" Interface
+    //   → this Return a "String":
     // override fun drive(): String = "driving the interface drive"
     override fun drive(): String {
         return "driving the interface drive"
     } 
-         
 
-    // ♦ The "drive()" Open Method:
+
+    // ♦ The "drive()" Open Method
+    //   → this Return a "Double":
     open fun drive(distance: Double){
         println("Drove for $distance KM")
-    }
+    }    
 
 }
 
 
 
 // ♦ "Sub/Child Class" of "NewCar" Class:
-class ECar(maxSpeed: Double, name: String, brand: String, batteryLife: Double)
-    : Car2(maxSpeed, name, brand){
+class ElectricCar (
+                maxSpeed: Double,
+                name: String, 
+                brand: String, 
+                batteryLife: Double
+            ) : Car3(maxSpeed, name, brand) {
     
-    // ♦ pROIERTY:
+    // ♦ Property:
     var chargerType = "Type1"
 
-    // ♦ Override Propery:
+    // ♦ Override Property:
     override var range = batteryLife * 6
 
-    // ♦ Override Method:
+
+    // ♦ Override "drive()" Method
+    //   → from "Car3{}" Class:
     override fun drive(distance: Double){
         println("Drove for $distance KM on electricity")
     }
 
-     // ♦ override Function:
+
+    // ♦ Override "drive()" Method
+    //   → from "Car3{}" Class
+    //   → which came from the "Driveable" Interface:
      override fun drive(): String {
         return "Drove $range KM on electricity"
     } 
 
-    // ♦ override Function:
+    // ♦ Override "brake()" Function
+    //   → from the "Driveable" Interface:
     override fun brake(){
         super.brake()
+        println("Brake inside of ElectricCar")  
     }
 }
  
@@ -110,8 +128,8 @@ class ECar(maxSpeed: Double, name: String, brand: String, batteryLife: Double)
 //      → as "Entry Point" of "Application":
 fun main (){
     // ♦ Objects:
-    var audiA6 = Car2(200.0, "A6", "Audi")
-    var teslaS = ECar(250.0, "S-Model", "Tesla", 80.0)
+    var audiA6 = Car3(200.0, "A6", "Audi")
+    var teslaS = ElectricCar(240.0, "S-Model", "Tesla", 80.0)
 
     // ♦ Assigning the "Values" of the "Objects Properties":
     teslaS.chargerType = "Type2"

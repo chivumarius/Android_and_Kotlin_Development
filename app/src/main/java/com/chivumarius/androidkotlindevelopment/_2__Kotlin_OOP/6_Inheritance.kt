@@ -56,7 +56,7 @@ package com.chivumarius.androidkotlindevelopment._2__Kotlin_OOP
 //  → with "Primary Constructor"
 //  → which Must Be "Opened"
 //  → in Order to be "Inherited":
-open class Car2(val name: String, val brand: String){
+open class Car2(name1: Double, val name: String, val brand: String){
     // ♦ Open Properties:
     open var range: Double = 0.0
 
@@ -77,7 +77,11 @@ open class Car2(val name: String, val brand: String){
 
 
 // ♦ "Sub/Child Class" of "NewCar" Class:
-class ECar(name: String, brand: String, batteryLife: Double): Car2(name, brand){
+class ECar(name1: Double, name: String, brand: String, batteryLife: Double): Car2(
+    200.0,
+    name,
+    brand
+){
     
     // ♦ pROIERTY:
     var chargerType = "Type1"
@@ -104,8 +108,8 @@ class ECar(name: String, brand: String, batteryLife: Double): Car2(name, brand){
 //      → as "Entry Point" of "Application":
 fun main (){
     // ♦ Objects:
-    var audiA6 = Car2("A6", "Audi")
-    var teslaS = ECar("S-Model", "Tesla", 80.0)
+    var audiA6 = Car2(200.0, "A6", "Audi")
+    var teslaS = ECar(250.0, "S-Model", "Tesla", 80.0)
 
     // ♦ Assigning the "Values" of the "Objects Properties":
     teslaS.chargerType = "Type2"
